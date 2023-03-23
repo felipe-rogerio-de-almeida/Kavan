@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/style-instalinks.css">
+    <!-- Fontawesome-->
+    <script src="https://kit.fontawesome.com/6ab03bd738.js" crossorigin="anonymous"></script>
+    <!-- / Fontawesome-->
+</head>
+
+<body>
+    <div>
+    <!-- Logo Kavan TROCAR PRA LOGO COMPLETA-->
+        <image src="./Assets/Logo - Branca.png"></image>
+    <!-- / Logo Kavan -->
+
+    <!-- Titulo -->
+        <h2>Kavan Serviços Contabéis</h2>
+    <!-- Titulo -->
+
+
+    <!-- Site -->
+
+        <button id="site" class="site"> <i id= "icon-site" class="fa-regular fa-globe" style="color: #000000;"></i> Site</button>
+        
+    <!-- /Site -->
+
+    <!-- WhatsApp -->
+
+        <button id="whatsapp" class="whatsapp"> <i id="icon-whatsapp" class="fa-brands fa-whatsapp" style="color: #000000;"></i> WhatsApp</button>
+        
+    <!-- /WhatsApp -->
+
+    <!-- Email -->
+
+        <button id="email" class="email"> <i id="icon-email" class="fa-regular fa-envelope" style="color: #000000;"></i> Email</button>
+        
+    <!-- /Email -->
+
+    <!-- LinkedIn -->
+
+        <button id="linkedin" class="linkedin"> <i id="icon-linkedin" class="fa-brands fa-linkedin" style="color: #000000;"></i> LinkedIn</button>
+        
+    <!-- /LinkedIn -->
+
+    <!-- Facebook -->
+
+        <button id="facebook" class="facebook"> <i id="icon-facebook" class="fa-brands fa-facebook" style="color: #000000;"></i> Facebook</button>
+        
+    <!-- /Facebook -->
+    
+    </div>
+
+    <script>
+        //SITE
+        var site = document.getElementById("site");
+
+        site.addEventListener("mouseover", () => {
+            document.getElementById("icon-site").style.color = "#ffffff";
+
+        });
+
+        site.addEventListener("mouseleave", () => {
+            document.getElementById("icon-site").style.color = "#000000";
+
+        });
+
+        site.addEventListener("click", () => {
+            window.open("https://www.kavan.com.br")
+        });
+        //Whatsapp
+        var whatsapp = document.getElementById("whatsapp");
+
+        whatsapp.addEventListener("mouseover", () => {
+            document.getElementById("icon-whatsapp").style.color = "#ffffff";
+
+        });
+
+        whatsapp.addEventListener("mouseleave", () => {
+            document.getElementById("icon-whatsapp").style.color = "#000000";
+
+        });
+
+        whatsapp.addEventListener("click", () => {
+            window.open("https://whatsa.me/5571996730632/?t=Ol%C3%A1,%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20Contabilidade")
+        });
+
+        //Email
+        var email = document.getElementById("email");
+
+        email.addEventListener("mouseover", () => {
+            document.getElementById("icon-email").style.color = "#ffffff";
+
+        });
+
+        email.addEventListener("mouseleave", () => {
+            document.getElementById("icon-email").style.color = "#000000";
+
+        });
+
+        email.addEventListener("click", () => {
+            window.open("mailto:kavan@kavan.com.br")
+        });
+
+        //LinkedIn
+        var linkedin = document.getElementById("linkedin");
+
+        linkedin.addEventListener("mouseover", () => {
+            document.getElementById("icon-linkedin").style.color = "#ffffff";
+
+        });
+
+        linkedin.addEventListener("mouseleave", () => {
+            document.getElementById("icon-linkedin").style.color = "#000000";
+
+        });
+
+        linkedin.addEventListener("click", () => {
+            window.open("https://www.linkedin.com/company/kavan-contabilidade/about/?viewAsMember=true")
+        });        
+
+
+        //Facebook
+        var facebook = document.getElementById("facebook");
+
+        facebook.addEventListener("mouseover", () => {
+            document.getElementById("icon-facebook").style.color = "#ffffff";
+
+        });
+
+        facebook.addEventListener("mouseleave", () => {
+            document.getElementById("icon-facebook").style.color = "#000000";
+
+        });
+
+        facebook.addEventListener("click", () => {
+            window.open("https://www.facebook.com/KavanContabilidade/")
+        });      
+
+
+    </script>
+</body>
+</html>

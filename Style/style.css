@@ -1,0 +1,1012 @@
+/*
+Fonte Principal: Mariad Pro
+Cores:
+    #68BC68
+    #4662CC
+*/ 
+
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('../Fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+    
+
+:root{
+
+    /*CORES*/
+    --primaria: #4662CC;
+    --primaria_clara: #7791F2;
+    --primaria_escura:#3049A6;
+    --secundaria: #68BC68;
+    --secundaria_clara: #9FE39F;
+    --secundaria_escura: #4B964B;
+    --light: #FFFFFF;
+    --light_escura: #E5DADA;
+    --dark: #121212;
+    --dark_clara: #1F1F1F;
+    --danger: #DC3545;
+    --warning: #FFC107;
+    --success: #28A745;
+    --inactive: #6C757D;
+
+  }
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.98rem;
+    line-height: 110%;
+}  
+
+h2{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.488rem;
+    line-height: 110%;
+}  
+
+h3{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.074rem;
+    line-height: 110%;
+}  
+
+h4{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.728rem;
+    line-height: 120%;
+}  
+
+h5{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.44rem;
+    line-height: 120%;    
+}  
+
+h6{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 120%;
+}  
+
+p{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+
+.small{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.78rem;
+    line-height: 150%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Myriad Pro',sans-serif;
+    color: var(--light);
+}
+
+
+body{
+    position: relative;
+    width: 100vw;    
+    background: linear-gradient(89.79deg, var(--secundaria) 0.21%, var(--primaria) 99.85%);
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: transparent;
+    
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+  
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.nav-flexbox{
+    display: flex;
+    padding: 10px 20px;
+    width: 100%;
+    height: 5%;
+    align-items: center;
+    justify-content:space-between;
+    overflow-x: hidden;
+}
+
+.nav-flexbox > img{
+    height: auto;
+    width: 60px;
+}
+
+.nav-flexbox > ul{
+    display: flex;
+    width: auto;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-flexbox > ul > li{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.nav-flexbox > ul > li > a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--light);
+    font-weight: 700;
+}
+
+/*.nav-flexbox > ul > li > a:link{
+    
+}
+
+.nav-flexbox > ul > li > a:visited{
+ 
+}
+
+.nav-flexbox > ul > li > a:hover{
+
+}
+
+.nav-flexbox > ul > li > a:active{
+
+}
+*/
+
+.div-inicio{
+    display: block;
+    width: 100%;
+    height: 490.77px;
+
+}
+
+
+.capa{
+    position: relative;
+    height: 490.77px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 111.86%), url('../Assets/CAPA@1080p.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+span.verde{
+    color: var(--secundaria_clara);
+    font-weight: 700;
+}
+
+.chamada-capa{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    left: 10vw;
+    top: 125px; 
+    overflow-x: hidden;
+    color: var(--light_escura);
+}
+
+.chamada-capa > h1{
+    font-weight: 700;
+}
+
+.chamada-capa > h4{
+    opacity: 0.9;
+}
+
+.chamada-capa > h6{
+    opacity: 0.7;
+}
+
+.btn-cta-azul{
+    background-color: var(--primaria);
+    border-radius: 20px;
+    width: 240px;
+    height: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+    border: none;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.btn-cta-azul:hover{
+    background-color: var(--primaria_clara);
+    color: var(--light_escura);
+    cursor: pointer;
+
+}
+
+.div-servicos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.txt-menu{
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    
+}
+
+.container-servicos{
+    margin: 25px 0px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,22vw);
+    grid-template-rows:repeat(4,45vh) ;
+    grid-template-areas: "FP1 FP2 FP3 FP4"
+                         "FP5 FP6 FP7 FP8"
+                         "FP9 FP10 FP11 FP12"
+                         "FP13 FP14 FP15 FP16";
+    justify-content:space-evenly;
+    align-items: flex-start;
+    
+}
+
+.FP1{
+    grid-area: 'FP1'; 
+}
+
+.FP2{
+    grid-area: 'FP2'; 
+}
+
+.FP3{
+    grid-area: 'FP3';     
+}
+
+.FP4{
+    grid-area: 'FP4'; 
+}
+
+.FP5{
+    grid-area: 'FP5'; 
+}
+
+.FP6{
+    grid-area: 'FP6';
+}
+
+.FP7{
+    grid-area: 'FP7';
+}
+
+.FP8{
+    grid-area: 'FP8';
+}
+
+.FP9{
+    grid-area: 'FP9';
+}
+
+.FP10{
+    grid-area: 'FP10';
+}
+
+.FP11{
+    grid-area: 'FP11';
+}
+
+.FP12{
+    grid-area: 'FP12';
+}
+
+.FP13{
+    grid-area: 'FP13';
+}
+
+.FP14{
+    grid-area: 'FP14';
+}
+
+.FP15{
+    grid-area: 'FP15';
+}
+
+.FP16{
+    grid-area: 'FP16';
+}
+
+.card {
+    width: 22vw;
+    height: 41vh;
+    position: relative;
+    perspective: 1000px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+}
+  
+.card .front, .card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+}
+  
+.card .front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.card .back {
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.card.flip .front {
+    transform: rotateY(180deg);
+}
+  
+.card.flip .back {
+    transform: rotateY(0);
+}
+ 
+.icone-servicos{
+    justify-content: center;
+    align-items: center;
+}
+
+.servico{
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.descricao-servico{
+    padding: 15px;
+
+}
+
+.desc-cta{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.cta-sevicos{
+    width: 301.17px;
+    height: 64.36px;
+    filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.4));
+    background-color: var(--secundaria);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.font-dark{
+    color: var(--dark);
+}
+
+.cta-sevicos:hover{
+    background-color: var(--secundaria_clara);
+    font-weight: 700;
+}
+
+.container-missao-visa-valores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+
+}
+
+.missao-visao-valores{
+    width: 480px;
+    height: 250px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.missao-visao-valores-icone{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    left: 1.5rem;
+    top: 2.5rem;
+
+}
+
+.missao-visao-valores-titulo{
+    position: relative;
+    left: 9rem;
+    top: -4rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.missao-visao-valores-descricao{
+    position: relative;
+    left: 9rem;
+    top: -4rem;
+    max-width: 65%;
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+.div-trofeus{
+    background-image: url('../Assets/Trofeus.png');
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    margin-top: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.premios-titulo{
+    position: relative;
+    width: 100% ;
+    height: 50.73px;
+    left: 75vw;
+    top: 1.2rem;
+    overflow-x: hidden;
+}
+.premio{
+    display: flex;
+    margin-top: 15px;
+    position: relative;
+    left: 65vw;
+}
+
+.premio > p{
+    margin-left: 5px;
+}
+
+.div-contato{
+    margin-top: 25px;
+    width: 100vw;
+    height: auto;
+
+}
+
+.container-contato-principal{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+.contato-esquerda{
+    width: 50%;
+    margin-left: 20px;
+
+
+}
+
+.contato-direita{
+    width: 50%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+.parceria{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-top: 60px;
+    transform: rotate(5deg);
+}
+
+.parceria-desc{
+    position: relative;
+    width:70%;
+    left: -0.7rem;
+    top: 0.7rem;
+    color: var(--dark);
+}
+
+
+.atendimento{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-top: 60px;
+
+}
+
+.atendimento-desc{
+    position: relative;
+    width:70%;
+    left: 0px;
+    top: 0px;
+    color: var(--dark);
+    transform: rotate(-5deg);
+}
+
+.container-inputs{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#input-nome::placeholder,#input-email::placeholder, #input-assunto::placeholder, #input-telefone::placeholder,#input-mensagem::placeholder{
+    color: rgba(255,255,255,0.7)
+
+}
+
+#input-nome, #input-email, #input-assunto, #input-telefone{
+    background: rgba(182, 182, 182, 0.34);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 450px;
+    height: 60px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+
+#input-mensagem{
+    background: rgba(182, 182, 182, 0.34);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 910px;
+    height: 200px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+
+}
+
+#input-nome:focus, #input-email:focus, #input-assunto:focus, #input-telefone:focus{
+    border: 1px rgba(182, 182, 182, 0.34);
+
+}
+
+.enviar-email{
+    background-color: var(--primaria);
+    width: 850px;
+    border-radius: 20px;
+    height: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.enviar-email:hover{
+    background-color: var(--primaria_clara);
+    color: var(--light_escura);
+    cursor: pointer;
+
+}
+
+.footer-info{
+    margin-top: 70px;   
+    padding-left: 25px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+.quarter{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    padding-left: 20px;
+
+}
+
+.redes-sociais{
+    display: flex;
+    min-width: 55%;
+    max-width: 60%;
+    justify-content: space-evenly;
+}
+
+.redes-sociais > i{
+    cursor: pointer;
+}
+
+
+footer{
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .chamada-capa{
+        top:20px
+    }
+
+    h1{
+        font-family: 'Myriad Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 120%;    
+    }  
+    
+    h2{
+        font-family: 'Myriad Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 120%;
+    }  
+    
+    h3{
+        font-family: 'Myriad Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 150%;
+    }
+
+    h4{
+        font-family: 'Myriad Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        
+    }
+
+    h5{
+        font-family: 'Myriad Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.9rem;
+        line-height: 150%;
+        
+    }
+
+    h6{
+        font-family: 'Myriad Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.7rem;
+        line-height: 150%;
+        
+    }
+
+    p{
+        font-family: 'Myriad Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.5rem;
+        line-height: 150%;
+    }
+
+    .nav-flexbox > img{
+        height: auto;
+        width: 20px;
+    }
+
+    .btn-cta-azul{
+        width: 150px;
+        height: 40px;
+    }
+    
+    .div-inicio{
+        height: 200px;
+    }
+ 
+    .icone-servicos{
+        scale: 0.5;
+    }
+
+    .cta-sevicos{
+        width: 80%;
+        height: 10%;
+    }
+
+    .missao-visao-valores{
+        width: 220px;
+        height: 180px;
+    }
+
+  
+    .missao-visao-valores-icone >img{
+        width: 48px;
+        height: 48px;
+    
+    }
+    
+    .missao-visao-valores-titulo{
+        position: relative;
+        left: 5rem;
+        top: -2rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .missao-visao-valores-descricao{
+        position: relative;
+        left: 5rem;
+        top:-2rem;
+    }
+
+    .container-missao-visa-valores{
+        height: 250px;
+    }
+
+    .div-trofeus{
+        width: 100%;
+        height: 300px;
+    }
+    .premio{
+        display: flex;
+        margin-top: 5px;
+        position: relative;
+        left: 60%;
+    }
+    
+
+    .premio > p{
+        margin-left: 5px;
+        font-size: 0.5rem;
+    }
+
+    .premio>i>img{
+        height: auto;
+        width: 10px;
+    }
+
+    #input-nome, #input-email, #input-assunto, #input-telefone{
+        width: 190px;
+        height: 40px;
+        
+    }
+    
+    #input-mensagem{
+        max-width: 800px;
+        height: 200px;
+    }
+
+    .parceria{
+        margin-top: 15px;
+    }
+
+    .parceria-desc{
+        width:200%;
+        left: -0.8rem;
+        top: 1.3rem;
+        font-size: 0.7rem;
+    }
+    
+    .parceria > i >img {
+        scale: 0.5;
+        left: -9rem;
+    }
+
+    .atendimento > i >img {
+        scale: 0.5;
+        right: -6rem;
+    }
+
+    .atendimento-desc{
+        font-size: 0.7rem;
+        left: -2rem;
+        top: 1.5rem;
+    }
+
+    .icone-parceria{
+        position: relative;
+        left: 2rem;
+    }
+
+    .parceria{
+        width: 80%;
+    }
+
+    .atendimento{
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+    .icone-atendimento{
+        position: relative;
+        left: -3rem;
+    }
+
+    .redes-sociais > i > img{
+        width: 30px;
+        margin-right: 5px;
+
+    }
+
+    .redes-sociais{
+        padding-left: 35px;
+    }
+}
+
+
+/*Small Desktop*/
+@media only screen and (max-width: 1441px) and (min-width: 1025px){
+
+    .chamada-capa{
+        top:80px
+
+
+    }
+    .descricao-servico{
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .missao-visao-valores-descricao{
+        font-size: 0.9rem;
+    }
+
+    .missao-visao-valores{
+        width: 440px;
+        height: 250px;
+
+    }
+    
+    .premio{
+        left: 60%;
+    }
+
+    .premio > p{
+        margin-left: 0
+    }
+
+    #input-nome, #input-email, #input-assunto, #input-telefone{
+        width: 355px;
+        height: 60px;
+        
+    }
+    
+    #input-mensagem{
+        max-width: 800px;
+        height: 200px;
+    }
+
+
+    .parceria-desc{
+        width:100%;
+        left: 0rem;
+        top: 0.7rem;
+        font-size: 1.3rem;
+    }
+    
+    .parceria > i >img {
+        scale: 0.8;
+        left: -4rem;
+    }
+
+    .atendimento > i >img {
+        scale: 0.8;
+        right: 2rem;
+    }
+
+    .atendimento-desc{
+        font-size: 1.3rem;
+        left: 0rem;
+        top: 1rem;
+    }
+
+    .enviar-email{
+        max-width: 710px;
+    }
+
+    .redes-sociais{
+        margin-left: 10px;
+    }
+
+    .redes-sociais>i>img{
+        margin-right:5px
+    }
+
+}
+
+/*Large Desktops*/
+@media only screen and (max-width: 1919px) and (min-width: 1442px){
+
+    #input-nome, #input-email, #input-assunto, #input-telefone{
+        width: 410px;
+        height: 60px;
+        
+    }
+    
+    #input-mensagem{
+        max-width: 900px;
+        height: 200px;
+    }
+
+    .enviar-email{
+        width: 840px;
+    }
+
+    .parceria-desc{
+        width: 70%;
+        left: -2rem;
+        top: 0.7rem;
+        font-size: 1.3rem;
+    }
+    
+    .parceria > i >img {
+        scale: 0.9;
+        left:  -2rem;
+    }
+
+    .atendimento > i >img {
+        scale: 0.9;
+        right: 6rem;
+    }
+
+    .atendimento-desc{
+        font-size: 1.3rem;
+        left: 0rem;
+        top: 1rem;
+    }
+
+    .descricao-servico{
+        padding: 10px;
+        font-size: 0.93rem;
+    }
+
+
+};

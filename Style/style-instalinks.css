@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('../Fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+    
+
+:root{
+    --primaria: #4662cc;
+    --secundaria: #68b868;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+
+h2{
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.488rem;
+    line-height: 110%;
+    color: white;
+    margin: 5px;
+    text-align: center;
+}  
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg,var(--secundaria) 0.20%, var(--primaria) 100%);
+    overflow-x: hidden; 
+}
+
+
+div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    max-width: 150px;
+    min-width: 150px;
+    margin: 5px;
+}
+
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0 ;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.site:hover{
+    background-color: var(--secundaria) ;
+    color: white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.whatsapp:hover{
+    background-color:#25D366 ;
+    color: white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.email:hover{
+    background-color:#0072c6 ;
+    color: white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.linkedin:hover{
+    background-color:#0077b5 ;
+    color: white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+.facebook:hover{
+    background-color:#3b5998 ;
+    color: white;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+
+@media only screen and ((max-width: 768px) and (max-height: 900px)) {
+
+    h2 {
+        font-size: 2.074rem;
+    }
+    
+}
