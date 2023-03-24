@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 
@@ -50,13 +50,14 @@ div{
 }
 
 img{
-    max-width: 150px;
+    max-width: 100%;
     min-width: 150px;
     margin: 5px;
 }
 
 
 button {
+    max-width: 100%;
     width: 200px;
     height: 50px;
     border-radius: 10px;

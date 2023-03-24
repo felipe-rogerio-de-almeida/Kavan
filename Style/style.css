@@ -172,23 +172,6 @@ body::-webkit-scrollbar-track {
     font-weight: 700;
 }
 
-/*.nav-flexbox > ul > li > a:link{
-    
-}
-
-.nav-flexbox > ul > li > a:visited{
- 
-}
-
-.nav-flexbox > ul > li > a:hover{
-
-}
-
-.nav-flexbox > ul > li > a:active{
-
-}
-*/
-
 .div-inicio{
     display: block;
     width: 100%;
@@ -205,6 +188,7 @@ body::-webkit-scrollbar-track {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 111.86%), url('../Assets/CAPA@1080p.png');
     background-repeat: no-repeat;
     background-size: contain;
+    
 }
 
 span.verde{
@@ -607,10 +591,23 @@ span.verde{
 
 }
 
-#input-nome:focus, #input-email:focus, #input-assunto:focus, #input-telefone:focus{
-    border: 1px rgba(182, 182, 182, 0.34);
-
+#input-nome:focus, #input-email:focus, #input-assunto:focus, #input-telefone:focus, #input-mensagem:focus{
+    border: 2px solid var(--primaria);
+    outline:none;
 }
+/* Fazer validação JS
+#input-nome:valid, #input-email:valid, #input-assunto:valid, #input-telefone:valid, #input-mensagem:valid{
+    border: 2px solid var(--secundaria);
+    outline:none;
+}
+*/
+
+
+#input-nome:invalid, #input-email:invalid, #input-assunto:invalid, #input-telefone:invalid, #input-mensagem:invalid{
+    border: 2px solid var(--danger);
+    outline:none;
+}
+
 
 .enviar-email{
     background-color: var(--primaria);
