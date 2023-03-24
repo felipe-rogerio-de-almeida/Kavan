@@ -32,7 +32,7 @@ Cores:
     --success: #28A745;
     --inactive: #6C757D;
 
-  }
+}
 
 html{
     font-size: 16px;
@@ -118,7 +118,7 @@ p{
 body{
     position: relative;
     width: 100vw;    
-    background: linear-gradient(89.79deg, var(--secundaria) 0.21%, var(--primaria) 99.85%);
+    background: linear-gradient(90deg, var(--secundaria) 0.21%, var(--primaria) 99.85%);
     overflow-x: hidden;
 }
 
@@ -384,7 +384,6 @@ span.verde{
 
 .descricao-servico{
     padding: 15px;
-
 }
 
 .desc-cta{
