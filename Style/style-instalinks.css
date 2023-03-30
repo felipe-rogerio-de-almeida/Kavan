@@ -11,8 +11,6 @@
     --secundaria: #68b868;
 }
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -103,8 +101,22 @@ button {
 
 @media only screen and ((max-width: 768px) and (max-height: 900px)) {
 
-    h2 {
-        font-size: 2.074rem;
+    
+    html{
+        font-size: 12px;
+        background: linear-gradient(90deg,var(--secundaria) 0.20%, var(--primaria) 100%);
+
     }
+    .logo{
+        width: 150px;
+        height: 150px;
+
+    }
+
+    i{
+        outline: none;
+        text-decoration: none;        
+    }
+
     
 }

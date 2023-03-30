@@ -124,7 +124,7 @@ p{
 
 body{
     position: relative;
-    width: 100vw;    
+    width: 100vw;  
     background: linear-gradient(90deg, var(--secundaria) 0.20%, var(--primaria) 100%);
     overflow-x: hidden;
 }
@@ -240,6 +240,7 @@ span.verde{
     font-weight: 700;
     letter-spacing: 2px;
     text-align: center;
+    margin-top: 25px ;
 }
 
 /* FLIP CARDS */
@@ -249,7 +250,7 @@ span.verde{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin: 2rem auto;
+    margin: 3rem auto;
     width: 100%;
     padding: 0 1rem ;
 }
@@ -322,7 +323,7 @@ span.verde{
 .descricao-servico{
     width: 100%;
     padding: 15px;
-    text-align: justify;;
+    text-align: justify;
 }
 
 
@@ -359,8 +360,132 @@ span.verde{
     font-weight: 700;
 }
 
+.div-sobre{
+    width: 100%;
+}
 
-@media screen and (max-width:1024px) {
+.container-sobre{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 100%;    
+    padding: 0 1rem ;    
+}
+
+.sobre{
+    display: flex;
+    min-width: 240px;
+    width: 480px;
+    max-width: 100%;
+    min-height: 125px;
+    height: 250px;
+    max-height: 250px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.sobre-esquerda{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-direita{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-icone{
+    display: flex;
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-titulo{
+    width: 100%;
+    overflow: hidden;
+}
+
+.sobre-descricao{
+    width: 100%;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.div-trofeus{
+    display: flex;
+    width: 100%;
+}
+
+.trofeus-esquerda{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trofeus-direita{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+
+.premio{
+    display: flex;
+    margin-top: 15px;
+}
+
+
+
+
+
+/*DESKTOP*/
+@media only screen and (min-width:1024px) and (max-width:1600px) {
+    html{
+        font-size: 14px;
+    }
+
+    .container-sobre{
+        gap: 0.8rem;
+        margin: 1rem auto;
+    }
+
+    .sobre{
+        width: 315px;
+        height: 300px;
+    }
+
+    .sobre-direita{
+        width: 65%;
+    }
+
+    .sobre-esquerda{
+        width: 35%;
+    }
+
+    .imgpremios{
+        scale: 0.7;
+    }
+
+}
+
+/*Tablet e Laptops*/
+@media only screen and (min-width:768px) and (max-width:1024px) {
     html{
         font-size: 14px;
     }
@@ -383,9 +508,31 @@ span.verde{
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     } 
+
+    .container-sobre{
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1rem;
+    }
+
+    .sobre{
+        width: 360px;
+    }
+
+    .sobre-direita{
+        width: 60%;
+    }
+
+    .sobre-esquerda{
+        width: 40%;
+    }
+
+    .imgpremios{
+        scale: 0.5;
+    }
 }
 
-@media screen and (max-width: 768px) {
+/*Celulares*/
+@media only screen and (min-width:480px) and (max-width: 768px) {
     html{
         font-size: 12px;
     }
@@ -413,9 +560,44 @@ span.verde{
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .card, .last-card{
+        height: 200px;
+    }
+
+    .container-sobre{
+        grid-template-columns: 1fr;   
+        gap: 2rem;
+    }
+
+    .sobre{
+        width: 100%;
+    }
+
+    .imgpremios{
+        scale: 0.3;
+    }
+
+    .div-trofeus{
+        flex-direction: column;
+    }
+
+    .trofeus-esquerda{
+        float: right;
+        width: 100%;
+        height: 300px;
+    }
+
+    .trofeus-direita{
+        float: left;
+        width: 100%;
+        padding: 25px;
+    }
 }
 
-@media screen and (max-width: 480px) {
+
+/* Small Celulares */
+@media only screen and (max-width: 480px) {
     html{
         font-size: 10px;
     }
@@ -448,9 +630,32 @@ span.verde{
         padding: 0 2rem ;
     }
 
-    .card{
+    .card, .last-card{
         height: 200px;
     }
+
+    .container-sobre{
+        grid-template-columns: 1fr;    
+    }
+
+    .sobre{
+        width: 100%;
+    }
+
+    .div-trofeus{
+        flex-direction: column;
+    }
+
+    .trofeus-esquerda{
+        display: none;
+    }
+
+    .trofeus-direita{
+        float: left;
+        width: 100%;
+        padding: 25px;
+    }
+
 }
 
   
