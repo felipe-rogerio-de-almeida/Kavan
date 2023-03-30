@@ -1,12 +1,12 @@
-var nomeInput = document.getElementById("input-nome");
-var telefoneInput = document.getElementById("input-telefone");
-var emailInput = document.getElementById("input-email");
-var assuntoInput = document.getElementById("input-assunto");
-var mensagemInput = document.getElementById("input-mensagem");
-var enviarBotao = document.getElementById("enviar-email");
+const nomeInput = document.getElementById("input-nome");
+const telefoneInput = document.getElementById("input-telefone");
+const emailInput = document.getElementById("input-email");
+const assuntoInput = document.getElementById("input-assunto");
+const mensagemInput = document.getElementById("input-mensagem");
+const enviarBotao = document.getElementById("enviar-email");
 
 function validarNome() {
-  var valor = nomeInput.value.trim();
+  const valor = nomeInput.value.trim();
   if (valor.length < 3) {
     nomeInput.classList.add("invalido");
     nomeInput.classList.remove("valido");
@@ -17,8 +17,8 @@ function validarNome() {
 }
 
 function validarTelefone() {
-  var valor = telefoneInput.value.trim();
-  var regex = /^(\d{2})?\s*(\d{4,5})\s*\-?\s*(\d{4})$/;
+  const valor = telefoneInput.value.replace(/\D/g, '');
+  const regex = /^(\d{2})\s*(\d{5})\s*\-?\s*(\d{4})$/;
   if (!regex.test(valor)) {
     telefoneInput.classList.add("invalido");
     telefoneInput.classList.remove("valido");
@@ -26,11 +26,14 @@ function validarTelefone() {
     telefoneInput.classList.remove("invalido");
     telefoneInput.classList.add("valido");
   }
+
+  telefoneInput.value = valor.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
 }
 
+
 function validarEmail() {
-  var valor = emailInput.value.trim();
-  var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const valor = emailInput.value.trim();
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!regex.test(valor)) {
     emailInput.classList.add("invalido");
     emailInput.classList.remove("valido");
@@ -41,7 +44,7 @@ function validarEmail() {
 }
 
 function validarAssunto() {
-  var valor = assuntoInput.value.trim();
+  const valor = assuntoInput.value.trim();
   if (valor.length < 5) {
     assuntoInput.classList.add("invalido");
     assuntoInput.classList.remove("valido");
@@ -52,7 +55,7 @@ function validarAssunto() {
 }
 
 function validarMensagem() {
-  var valor = mensagemInput.value.trim();
+  const valor = mensagemInput.value.trim();
   if (valor.length < 10) {
     mensagemInput.classList.add("invalido");
     mensagemInput.classList.remove("valido");
@@ -63,7 +66,7 @@ function validarMensagem() {
 }
 
 function validarFormulario() {
-  var valido = true;
+  const valido = true;
   validarNome();
   validarTelefone();
   validarEmail();
@@ -71,10 +74,9 @@ function validarFormulario() {
   validarMensagem();
 
   // Verifica se algum campo de entrada é inválido
-  var camposInvalidos = document.querySelectorAll(".invalido");
+  const camposInvalidos = document.querySelectorAll(".invalido");
   if (camposInvalidos.length > 0) {
     valido = false;
-    console.log(valido);
   }
 
   return valido;
@@ -91,74 +93,56 @@ enviarBotao.addEventListener("click", function(event) {
     event.preventDefault();
     alert("Por favor, preencha todos os campos corretamente.");
   }else {
-    sendEmail();
+    // Chamar a função enviaremail() para enviar o e-mail
+    enviaremail();
   };
 
 });
 
-/*
-//Telefone Formatação
-function formatarTelefone(telefone) {
-    var regex = /^(\d{2})(\d{5})(\d{4})$/;
-    return telefone.replace(regex, "($1) $2-$3");
-}
-  
-var telefoneInput = document.getElementById("input-telefone");
-  
-telefoneInput.addEventListener("input", function(event) {
-    var input = event.target;
-    var valor = input.value;
-  
-    // Remove todos os caracteres que não são números
-    valor = valor.replace(/\D/g, "");
-  
-    // Formata o número de telefone
-    valor = formatarTelefone(valor);
-  
-    // Define o valor formatado de volta no campo de entrada de telefone
-    input.value = valor;
-});
-  
-*/
 
+function enviaremail(){
+// Obter informações do formulário
+  const name = document.getElementById("input-nome").value;
+  const email = document.getElementById("input-email").value;
+  const message = document.getElementById("input-mensagem").value;
+  const assunto = document.getElementById("input-assunto").value;
+  const telefone = document.getElementById("input-telefone").value;
 
-function loadConfig() {
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "../../Config/config.php", true);
-    xhr.onload = function () {
-      if (this.status === 200) {
-        const config = JSON.parse(this.responseText);
-        // Usar as informações de configuração obtidas
-        sendEmail(config);
-      }
-    };
-    xhr.send();
-}
-  
-function sendEmail(config) {
-    // Obter informações do formulário
-    const name = document.getElementById("input-nome").value;
-    const email = document.getElementById("input-email").value;
-    const message = document.getElementById("input-mensagem").value;
-    const assunto = document.getElementById("input-assunto").value;
-    const telefone = document.getElementById("input-telefone").value;
+  // Construir mensagem de e-mail
+  const body = `Nome: ${name}\nE-mail:${email}\n${assunto}\n${telefone}\nMensagem:\n${message}`;
 
-    // Construir mensagem de e-mail
-    const subject = `Nova mensagem de ${name} - ${assunto}`;
-    const body = `Nome: ${name}\nE-mail: ${email}\n \nMensagem:\n${message}`;
-
-    // Enviar e-mail usando o serviço de e-mail
-    Email.send({
-        Host: config.host,
-        Username: config.username,
-        Password: config.password,
-        To: config.to,
-        From: config.from,
-        Subject: subject,
-        Body: body,
-    }).then((message) => alert("E-mail enviado com sucesso!"));
+  fetch("https://formsubmit.co/ajax/site.kavan@gmail.com", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          nome: "FormSubmit",
+          message: body
+      })
+  })
+  .then(response => response.json())
+  .then(() => {
+    limparFormulario();
+    alert("Email enviado com sucesso!");
+    
+  })
+  .catch(error => console.log(error));
 }
 
-// Chamar a função loadConfig() para obter as informações de configuração e enviar o e-mail
-loadConfig();
+function limparFormulario() {
+  document.getElementById("input-nome").value = "";
+  document.getElementById("input-email").value = "";
+  document.getElementById("input-mensagem").value = "";
+  document.getElementById("input-assunto").value = "";
+  document.getElementById("input-telefone").value = "";
 
+
+  document.getElementById("input-nome").classList.remove("valido");
+  document.getElementById("input-email").classList.remove("valido");
+  document.getElementById("input-mensagem").classList.remove("valido");
+  document.getElementById("input-assunto").classList.remove("valido");
+  document.getElementById("input-telefone").classList.remove("valido");
+  
+}

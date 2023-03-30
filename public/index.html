@@ -2,72 +2,73 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Kavan Serviços Contábeis</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kavan Serviços Contabéis</title>
         <link rel="stylesheet" href="./Style/style.css">
+        <!-- Fontawesome-->
+        <script src="https://kit.fontawesome.com/6ab03bd738.js" crossorigin="anonymous"></script>
+        <!-- / Fontawesome-->
+        <link rel="icon" href="./Assets/Logo/favicon-32.png" sizes="32x32">
+        <link rel="icon" href="./Assets/Logo/favicon-64.png" sizes="64x64">
+        <link rel="icon" href="./Assets/Logo/favicon-128.png" sizes="128x128">
     </head>
-    <body>
 
+    <body>
         <!-- Header -->
-            <div class="nav-flexbox" id="nav">
-                <img src="./Assets/Logo - Branca.png">
+        <div class="nav-flexbox" id="nav">
+                <img src="./Assets/Logo/Logo - Branca.png">
                 <ul>
                     <li><a href="#div-inicio"><H6>Inicio</H6></a></li>
                     <li><a href="#div-servicos"><H6>Serviços</H6></a></li>
                     <li><a href="#div-sobre"><H6>Sobre</H6></a></li>
                     <li><a href="#div-contato"><H6>Contato</H6></a></li>
-
                 </ul>
-            </div>
-        <!-- /Header -->    
-        
+         </div>
+        <!-- /Header -->  
 
         <!-- Inicio -->
-        <div class="div-inicio" id="div-inicio">    
-            <div class="capa" id="capa">
-                <div class="chamada-capa" id="chamada-capa">
-                    <H1>Seja bem vindo <span class="verde">A Kavan</span>,</H1>
-                    <h4>Anos prestando serviços contábeis de alta qualidade para nossos clientes.</h4>
-                    <h6>Nossos escritório trabalha em Home Office e atendemos todo o Brasil. Entre em 
-                        contato e deixe a parte chata e burocrática com a gente!</h6>
+        <div class="div-inicio" id="div-inicio">   
+            <div class="inicio-esquerda"> 
+                <img id="img-capa" class="img-capa" src="./Assets/Computador.png">
+            </div>
+            <div class="inicio-direita">
+                <H1 class="strong high-emphasis">Seja bem vindo <span class="verde">A Kavan</span>,</H1>
+                <h4 class="medium-emphasis">Desde 1997 prestando serviços contábeis de alta qualidade para nossos clientes.</h4>
+                <h6 class="low-emphasis">Nosso escritório trabalha em Home Office e atendemos todo o Brasil. Entre em 
+                    contato e deixe a parte chata e burocrática com a gente!</h6>
 
-                    <button class="btn-cta-azul" id="cta-mensagem"> <h6> Mande uma mensagem!</h6></button>
-                </div>
+                <button class="btn-cta-azul" id="cta-mensagem"> <h6> Mande uma mensagem!</h6></button>
             </div>
         </div>    
-        <!-- /Inicio -->
+        <!-- /Inicio -->     
 
-
-        <!-- Serviços -->
+        <!-- Serviços -->        
         <div class="div-servicos" id="div-servicos">
-            <h2 class="txt-menu">Serviços</h2>
+            <h2 class="txt-menu">Nossos Serviços</h2>
 
-            <div class="container-servicos">
+            <div class="cards-grid">
                 <!-- Serviço - Abertura de Empresa -->
-                <div class="card FP1">
-                    <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/Abertura_de_empresas.png"></i>
-                      <h5 class="servico">Abertura de Empresas</h5>
-                    </div>
-                    
-            
-                    <div class="back">
-                      <p class="descricao-servico">Todo o processo burocrático, verificando a legislação 
+                <div class="card">
+                  <div class="front">
+                    <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/Abertura_de_empresas.png"></i>
+                    <h5 class="servicos">Abertura de Empresas</h5>
+                  </div>
+                  <div class="back">
+                    <p  class="descricao-servico">Todo o processo burocrático, verificando a legislação 
                         (estadual, municipal e federal) que se aplica ao seu negócio para que nenhuma 
                         obrigação deixe de ser cumprida evitando que o empreendedor responda por falhas 
                         mais tarde. – Definição dos códigos CNAE (Classificação Nacional De Atividades 
                         Econômicas) – Escolha Da Natureza Jurídica – Definição do regime tributário e 
-                        verificação das alíquotas de imposto</p>
-                    </div>
-                    
+                        verificação das alíquotas de imposto.</p>
+                  </div>
                 </div>
                 <!-- /Serviço - Abertura de Empresa -->
 
-
                 <!-- Serviço - Abertura de Filiais -->
-                <div class="card FP2">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/Abertura_de_filiais.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/Abertura_de_filiais.png"></i>
                       <h5 class="servico">Abertura de Filiais</h5>
                     </div>
                     <div class="back">
@@ -83,9 +84,9 @@
 
 
                 <!-- Serviço - Alterações Contraruais -->
-                <div class="card FP3">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/alteracoes_contratuais.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/alteracoes_contratuais.png"></i>
                       <h5 class="servico">Alterações Contratuais</h5>
                     </div>
         
@@ -110,9 +111,9 @@
                 
 
                 <!-- Serviço - Assessoria Trabalhista -->
-                <div class="card FP4">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/assessoria_trabalhista.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/assessoria_trabalhista.png"></i>
                       <h5 class="servico">Assessoria Trabalhista</h5>
                     </div>
         
@@ -135,9 +136,9 @@
 
 
                 <!-- Serviço - Benefícios Fiscais -->
-                <div class="card FP5">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/beneficios_fiscais.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/beneficios_fiscais.png"></i>
                       <h5 class="servico">Benefícios Fiscais</h5>
                     </div>
         
@@ -160,9 +161,9 @@
 
 
                 <!-- Serviço - Certidão Negativa de Débitos -->
-                <div class="card FP6">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/certidao_negativa_de_debitos.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/certidao_negativa_de_debitos.png"></i>
                       <h5 class="servico">Certidão Negativa de Débitos</h5>
                     </div>
         
@@ -178,9 +179,9 @@
                 <!-- /Serviço - Certidão Negativa de Débitos -->
 
                 <!-- Serviço - Contabilidade para Pessoa Física -->
-                <div class="card FP7">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/contabilidade_para_pessoa_fisica.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/contabilidade_para_pessoa_fisica.png"></i>
                       <h5 class="servico">Contabilidade para Pessoa Física</h5>
                     </div>
         
@@ -196,9 +197,9 @@
                 <!-- /Serviço - Contabilidade para Pessoa Física -->
 
                 <!-- Serviço - Controle de Estoque -->
-                <div class="card FP8">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/controle_de_estoque.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/controle_de_estoque.png"></i>
                       <h5 class="servico">Controle de Estoque</h5>
                     </div>
         
@@ -217,9 +218,9 @@
                 <!-- /Serviço - Controle de Estoque -->
 
                 <!-- Serviço - Controle Patrimonial -->
-                <div class="card FP9">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/controle_patrimonial.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/controle_patrimonial.png"></i>
                       <h5 class="servico">Controle Patrimonial</h5>
                     </div>
         
@@ -235,9 +236,9 @@
                 <!-- /Serviço - Controle Patrimonial -->
 
                 <!-- Serviço - Declaração do Imposto de Renda -->
-                <div class="card FP10">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/declaracao_de_imposto_de_renda.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/declaracao_de_imposto_de_renda.png"></i>
                       <h5 class="servico">Declaração do Imposto de Renda</h5>
                     </div>
         
@@ -256,9 +257,9 @@
                 <!-- /Serviço - Declaração do Imposto de Renda -->
 
                 <!-- Serviço - Encerramento de Empresas -->
-                <div class="card FP11">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/encerramento_de_empresas.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/encerramento_de_empresas.png"></i>
                       <h5 class="servico">Encerramento de Empresas</h5>
                     </div>
         
@@ -273,9 +274,9 @@
                 <!-- /Serviço - Encerramento de Empresas -->
 
                 <!-- Serviço - Entrega de Obrigações Acessórias -->
-                <div class="card FP12">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/entrega_de_obrigacoes_acessorias.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/entrega_de_obrigacoes_acessorias.png"></i>
                       <h5 class="servico">Entrega de Obrigações Acessórias</h5>
                     </div>
         
@@ -296,9 +297,9 @@
                 <!-- /Serviço - Entrega de Obrigações Acessórias -->
 
                 <!-- Serviço - Escrituração Contábil -->
-                <div class="card FP13">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/escrituracao_contabil.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/escrituracao_contabil.png"></i>
                       <h5 class="servico">Escrituração Contábil</h5>
                     </div>
         
@@ -314,9 +315,9 @@
                 <!-- /Serviço - Escrituração Contábil -->
 
                 <!-- Serviço - Homologações Sindicais -->
-                <div class="card FP14">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/homologacao_sindical.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/homologacao_sindical.png"></i>
                       <h5 class="servico">Homologações Sindicais</h5>
                     </div>
         
@@ -332,9 +333,9 @@
                 <!-- /Serviço - Homologações Sindicais -->
 
                 <!-- Serviço - Planejamento Tributário -->
-                <div class="card FP15">
+                <div class="card">
                     <div class="front">
-                      <i class="icone-servicos"><img src="./Assets/planejamento_tributario.png"></i>
+                      <i class="icone-servicos"><img src="./Assets/Icones-FlipCards/planejamento_tributario.png"></i>
                       <h5 class="servico">Planejamento Tributário</h5>
                     </div>
         
@@ -350,138 +351,157 @@
                     
                 </div>
                 <!-- /Serviço - Planejamento Tributário -->
-
+                
                 <!-- Serviço - CTA -->
-                <div class="card FP16">
-                    <div class="desc-cta">
-                      <H3>Não encontrou o que estava procurando?</H3>
-                      <h6>Entre em contato com a gente que iremos te ajudar!</h6>
-                      <button class="cta-sevicos" id="cta-servicos"><h6 class="font-dark">Entrar em contato!</h6></button>
-                    </div>
-        
-                    
+                <div class="last-card">
+                  <div class="desc-cta">
+                    <H3>Não encontrou o que estava procurando?</H3>
+                    <h6>Entre em contato com a gente que iremos te ajudar!</h6>
+                    <button class="cta-sevicos" id="cta-servicos"><h6 class="font-dark">Entrar em contato!</h6></button>
+                  </div>
                 </div>
                 <!-- /Serviço - CTA -->
+              </div>
+            
+            <!-- Script FlipCard-->
+            <script>
+                const cards = document.querySelectorAll('.card');
 
+                cards.forEach(card => {
+                    card.addEventListener('mouseover', () => {
+                        card.classList.add('flip');
+                    });
 
-            </div>
-        </div>
-        <!-- /Serviços -->
-
+                    card.addEventListener('mouseout', () => {
+                        card.classList.remove('flip');
+                    });
+                });
+            </script>
+            <!-- /Script FlipCard-->
+        </div>    
 
         <!-- Sobre -->
         <div class="div-sobre" id="div-sobre">
           <h2 class="txt-menu">A Kavan</h2>
           <!-- Missão - Visão - Valores-->
-          <div class="container-missao-visa-valores">
-            <!-- Proposito -->
-            <div class="missao-visao-valores">
-              <i class="missao-visao-valores-icone"><img src="./Assets/proposito.png"></i>
-              <h4 class="missao-visao-valores-titulo">Propósito</h4>
-              <p class="missao-visao-valores-descricao">Mostrar para nossos clientes o quanto a contabilidade é importante no processo 
-                de tomada de decisão, capaz de gerar riqueza e prosperidade para as empresas.</p>
-            </div>
-            <!-- /Proposito -->
-
-            <!-- Visão -->
-            <div class="missao-visao-valores">
-              <i class="missao-visao-valores-icone"><img src="./Assets/visao.png"></i>
-              <h4 class="missao-visao-valores-titulo">Visão</h4>
-              <p class="missao-visao-valores-descricao">Queremos ter clientes que são nossos amigos, clientes que nos veem como 
-                indispensável para a saúde da empresa, que nos liguem para pedir opinião antes de qualquer tomada de decisão, 
-                que reconheçam nosso valor para o crescimento da empresa.</p>
-            </div>
-            <!-- /Visão -->
-
-            <!-- Valores -->
-            <div class="missao-visao-valores">
-              <i class="missao-visao-valores-icone"><img src="./Assets/valores.png"></i>
-              <h4 class="missao-visao-valores-titulo">Valores</h4>
-              <p class="missao-visao-valores-descricao">Buscamos sempre pelo conhecimento, focamos em resultados, qualidade e 
-                confiabilidade, sigilo e segurança das informações, trabalho em equipe, organização e agilidade na prestação dos serviços.</p>
-            </div>
-            <!-- /Valores -->
-            
-
+          <div class="container-sobre">
+              <!-- Proposito -->
+              <div class="sobre">
+                    <div class="sobre-esquerda">
+                        <i><img class="sobre-icone" src="./Assets/Icones-Sobre/proposito.png"></i>
+                    </div>
+                    <div class="sobre-direita">
+                        <h4 class="sobre-titulo">Propósito</h4>
+                        <p class="sobre-descricao">Mostrar para nossos clientes o quanto a contabilidade é importante no processo 
+                        de tomada de decisão, capaz de gerar riqueza e prosperidade para as empresas.</p>
+                    </div>        
+              </div>
+              <!-- /Proposito -->
+    
+              <!-- Visão -->
+              <div class="sobre">
+                  <div class="sobre-esquerda">
+                      <i class="sobre-icone"><img src="./Assets/Icones-Sobre/visao.png"></i>
+                  </div>
+                  <div class="sobre-direita">
+                      <h4 class="sobre-titulo">Visão</h4>
+                      <p class="sobre-descricao">Queremos ter clientes que são nossos amigos, clientes que nos veem como 
+                      indispensável para a saúde da empresa, que nos liguem para pedir opinião antes de qualquer tomada de decisão, 
+                      que reconheçam nosso valor para o crescimento da empresa.</p>
+                  </div>
+              </div>
+              <!-- /Visão -->
+  
+              <!-- Valores -->
+              <div class="sobre">
+                  <div class="sobre-esquerda">
+                      <i class="sobre-icone"><img src="./Assets/Icones-Sobre/valores.png"></i>
+                  </div>
+                  <div class="sobre-direita">
+                      <h4 class="sobre-titulo">Valores</h4>
+                      <p class="sobre-descricao">Buscamos sempre pelo conhecimento, focamos em resultados, qualidade e 
+                      confiabilidade, sigilo e segurança das informações, trabalho em equipe, organização e agilidade na prestação dos serviços.</p>
+                  </div>        
+              </div>
+              <!-- /Valores -->
           </div>
           <!-- /Missão - Visão - Valores-->
-
+            
           <!-- Trofeus-->
           <div class="div-trofeus" id="div-trofeus">
-
-            <h2 class="premios-titulo">Prêmios</h2>
-            
-            
-            <!-- Premio 1-->
-            <div class="premio">
-              <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
-              <p>Gran Awards de Excelência e Qualidade e Empresa do Ano em Qualidade 2010</p>
+            <div class="trofeus-esquerda">
+              <img class="imgpremios" src="./Assets/Premio.png" alt="trofeu">
             </div>
-            <!-- /Premio 1-->
 
-            <!-- Premio 2-->
-            <div class="premio">
-              <i><img src="./Assets/Icones-Sobre/certificado.png" alt=""></i>
-              <p>Top of Quality Brazil 2010</p>
-            </div>
-            <!-- /Premio 2-->
+            <div class="trofeus-direita">
+              <h2 class="txt-menu">Prêmios</h2>
+              <!-- Premio 1-->
+              <div class="premio">
+                <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
+                <p>Gran Awards de Excelência e Qualidade e Empresa do Ano em Qualidade 2010</p>
+              </div>
+              <!-- /Premio 1-->
 
-            <!-- Premio 3-->
-            <div class="premio">
-              <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
-              <p>Gran Awards de Excelência e Qualidade e Empresa do Ano em Qualidade 2011</p>
-            </div>
-            <!-- /Premio 3-->
+              <!-- Premio 2-->
+              <div class="premio">
+                <i><img src="./Assets/Icones-Sobre/certificado.png" alt=""></i>
+                <p>Top of Quality Brazil 2010</p>
+              </div>
+              <!-- /Premio 2-->
 
-            <!-- Premio 4-->
-            <div class="premio">
-              <i><img src="./Assets/Icones-Sobre/certificado.png" alt=""></i>
-              <p>Top of Quality Brazil 2011</p>
-            </div>
-            <!-- /Premio 4-->
+              <!-- Premio 3-->
+              <div class="premio">
+                <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
+                <p>Gran Awards de Excelência e Qualidade e Empresa do Ano em Qualidade 2011</p>
+              </div>
+              <!-- /Premio 3-->
 
-            <!-- Premio 5-->
-            <div class="premio">
-              <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
-              <p>Top of Quality Gold International 2011</p>
-            </div>
-            <!-- /Premio 5-->
+              <!-- Premio 4-->
+              <div class="premio">
+                <i><img src="./Assets/Icones-Sobre/certificado.png" alt=""></i>
+                <p>Top of Quality Brazil 2011</p>
+              </div>
+              <!-- /Premio 4-->
 
-            <!-- Premio 6-->
-            <div class="premio">
-              <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
-              <p>Top of Quality Gold International 2012</p>
-            </div>
-            <!-- /Premio 6-->
+              <!-- Premio 5-->
+              <div class="premio">
+                <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
+                <p>Top of Quality Gold International 2011</p>
+              </div>
+              <!-- /Premio 5-->
 
-            <!-- Premio 7-->
-            <div class="premio">
-              <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
-              <p>Prêmio Excelência e Qualidade Brasil 2014</p>
-            </div>
-            <!-- /Premio 7-->
+              <!-- Premio 6-->
+              <div class="premio">
+                <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
+                <p>Top of Quality Gold International 2012</p>
+              </div>
+              <!-- /Premio 6-->
 
-            <!-- Premio 8-->
-            <div class="premio">
-              <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
-              <p>Prêmio Excelência e Qualidade Brasil 2015</p>
-            </div>
-            <!-- /Premio 8-->
+              <!-- Premio 7-->
+              <div class="premio">
+                <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
+                <p>Prêmio Excelência e Qualidade Brasil 2014</p>
+              </div>
+              <!-- /Premio 7-->
 
+              <!-- Premio 8-->
+              <div class="premio">
+                <i><img src="./Assets/Icones-Sobre/trofeu.png" alt=""></i>
+                <p>Prêmio Excelência e Qualidade Brasil 2015</p>
+              </div>
+              <!-- /Premio 8-->
+              </div>
 
           </div>
           <!-- /Trofeus-->
-
-        </div>
+        </div>    
         <!-- /Sobre -->
 
-
-        <!-- Contato -->
-
+         <!-- Contato -->
         <div class="div-contato" id="div-contato">
           <h2 class="txt-menu">Contato</h2>
+
           <div class="container-contato-principal" id="container-contato-principal">
-            
             <!-- Lado Esquerdo-->
             <div class="contato-esquerda">
               <h3>Tem alguma duvida?</h3>
@@ -504,8 +524,11 @@
                 <button id="enviar-email" class="enviar-email">Enviar!</button>
               </div>
             </div>
-            <!-- /Lado Esquerdo-->
+            <script type="text" src="../Config/config.json"></script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="./Script/form.js"></script>
 
+            <!-- /Lado Esquerdo-->
 
             <!-- Lado Direito-->
             <div class="contato-direita">
@@ -513,58 +536,44 @@
               <h1 style="font-weight: 700;">nossos serviços?</h1>
            
               <!-- Parceria -->
-              <div class="parceria">
-                <i><img style="position: absolute;" src="./Assets/Retangulo.png" alt=""></i>
-                <h4 class="parceria-desc">Entre em <span style="color:#4662CC;font-weight: 700;">contato</span> e venha fazer  uma
-                  parceria de <span style="color:#4662CC; font-weight: 700;">sucesso</span>!</h4>
-                <i class="icone-parceria"><img src="./Assets/Handshake.png" alt=""></i>
+              <div class="row-contato">
+                  <i><img class="parceria" src="./Assets/Icones-Sobre/Parceria.png" alt=""></i>
               </div>
               <!-- /Parceria -->
 
               <!-- Atendimento -->
-              <div class="atendimento">
-                <i class="icone-atendimento" ><img style="transform: rotate(5deg)"" src="./Assets/Whatsapp.png" alt=""></i>
-                <i><img style="position: absolute;transform: rotate(177deg)" src="./Assets/Retangulo.png" alt=""></i>
-                <h4 class="atendimento-desc">Atendimento  <span style="color:#4662CC;font-weight: 700;">todos os dias </span>pelo 
-                  nosso <span style="color:#68BC68; font-weight: 700;">Whatsapp</span>.</h4>
+              <div class="row-contato">
+                <i><img class="parceria" src="./Assets/Icones-Sobre/Atendimento.png" alt=""></i>
               </div>
-              <!-- /Atendimento -->           
+              <!-- /Atendimento -->
 
               <!-- Qualidade -->
-              <div class="parceria">
-                <i><img style="position: absolute;" src="./Assets/Retangulo.png" alt=""></i>
-                <h4 class="parceria-desc">Atendimento de máxima <span style="color:#4662CC;font-weight: 700;">qualidade</span> para atender 
-                  bem <span style="color:#4662CC; font-weight: 700;">você</span> e sua empresa!</h4>
-                <i class="icone-parceria"><img src="./Assets/seguranca.png" alt=""></i>
-              </div>
-              <!-- /Qualidade -->              
+              <div class="row-contato">
+                <i><img class="parceria" src="./Assets/Icones-Sobre/Qualidade.png" alt=""></i>
+            </div>
+            <!-- /Qualidade -->
+
+             
             </div>
             <!-- /Lado Direito-->
           </div>
-        </div>
-
+        
+        </div>  
         <!-- /Contato -->
-
-
-
-
 
         <!-- Footer -->
         
         
         <div class="footer-info" id="footer-info">
-          
-          
           <div class="quarter">
             <h2 style="font-weight: 700;">Localização</h2>
             <h5>ATENDEMOS TODO O BRASIL</h5>
             <p style="opacity: 0.8;">Nossos profissionais estão alocados em Salvador, Bahia</p>
-          </div>             
+          </div>   
 
           <div class="quarter">
             <h2 style="font-weight: 700;">Telefone</h2>
             <h5>(71) 99673-0632</h5>
-
           </div>             
 
           <div class="quarter">
@@ -575,30 +584,21 @@
           <div class="quarter">
             <h2 style="font-weight: 700;">Redes Sociais</h2>
             <div class="redes-sociais" id="redes-sociais">
-              <i><img src="./Assets/LinkedIn.png" id="linkedin"></i>
-              <i><img src="./Assets/Instagram.png" id="instagram"></i>
-              <i><img src="./Assets/Facebook.png" id="facebook"></i>
-              <i><img src="./Assets/Email.png" id="email"></i>
-
+              <i><img src="./Assets/redes-sociais/LinkedIn.png" id="linkedin"></i>
+              <i><img src="./Assets/redes-sociais/Instagram.png" id="instagram"></i>
+              <i><img src="./Assets/redes-sociais/Facebook.png" id="facebook"></i>
+              <i><img src="./Assets/redes-sociais/Email.png" id="email"></i>
+              <i><img src="./Assets/redes-sociais/Whatsapp.png" id="whatsapp"></i>
             </div>
+          </div>   
+        </div>  
 
-          </div>             
-
-
-
-
-        </div>    
-         
-        
         <footer>
-            <p> Copyright © 2023 Kavan Serviços Contábeis </p>
+          <p> Copyright © 2023 Kavan Serviços Contábeis CNPJ 01.651.976/0001-97.</p>
         </footer>
-        
-        <!-- /Footer -->
-
+      
+      <!-- /Footer -->
 
         <script src="./Script/script.js"></script>
-
-    
     </body>
 </html>
