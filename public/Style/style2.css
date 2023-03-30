@@ -125,7 +125,7 @@ p{
 body{
     position: relative;
     width: 100vw;  
-    background: linear-gradient(90deg, var(--secundaria) 0.20%, var(--primaria) 100%);
+    background: linear-gradient(90deg, var(--secundaria) 0%, var(--primaria) 100%);
     overflow-x: hidden;
 }
 
@@ -450,8 +450,163 @@ span.verde{
     margin-top: 15px;
 }
 
+.div-contato{
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.container-contato-principal{
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+
+}
+
+.contato-esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.container-inputs{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#input-nome::placeholder,#input-email::placeholder, 
+#input-assunto::placeholder, #input-telefone::placeholder,
+#input-mensagem::placeholder{
+    color: rgba(255,255,255,0.7)
+
+}
+
+#input-nome, #input-email, #input-assunto, #input-telefone{
+    background: rgba(182, 182, 182, 0.34);
+    border: 1px solid #000000;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 45%;
+    height: 60px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    font-family:'Myriad Pro';
+}
+
+#input-nome:focus, #input-email:focus, #input-assunto:focus, #input-telefone:focus, #input-mensagem:focus{
+    border: 2px solid var(--primaria);
+    outline:none;
+}
+
+.invalido{
+    border: 2px solid var(--danger) !important;
+    outline:none;
+}
 
 
+.valido{
+    border: 2px solid var(--secundaria) !important;
+    outline:none;
+}
+
+
+#input-mensagem{
+    background: rgba(182, 182, 182, 0.34);
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 95%;
+    height: 200px;
+    overflow: auto;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.enviar-email{
+    background-color: var(--primaria);
+    width: 95%;
+    border-radius: 20px;
+    height: 50px;
+    filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.5));
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.enviar-email:hover{
+    background-color: var(--primaria_clara);
+    color: var(--light_escura);
+    cursor: pointer;
+}
+
+.contato-direita{
+    width: 50%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.row-contato{
+    display: flex;
+    width: 100%;
+    margin: 30px 0 ;
+    justify-content: center;
+}
+
+.footer-info{
+    margin-top: 60px;   
+    padding-left: 25px;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+.quarter{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    padding-left: 20px;
+
+}
+
+.redes-sociais{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.redes-sociais > i{
+    display: flex;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+
+
+footer{
+    display: flex;
+    height: 5vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*DESKTOP*/
@@ -482,7 +637,24 @@ span.verde{
         scale: 0.7;
     }
 
-}
+    .parceria{
+        scale: 0.8;
+        width: 100%;
+    }
+
+    .redes-sociais{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .redes-sociais i{
+        width: 20%;
+    }
+
+    #linkedin , #instagram , #facebook , #email , #whatsapp{
+        scale: 0.7;
+    }
+
+}   
 
 /*Tablet e Laptops*/
 @media only screen and (min-width:768px) and (max-width:1024px) {
@@ -529,6 +701,50 @@ span.verde{
     .imgpremios{
         scale: 0.5;
     }
+
+    .container-contato-principal{
+        flex-direction: column;
+    }
+
+    .contato-esquerda{
+        width: 90%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .contato-direita{
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    .parceria{
+        scale: 1;
+        width: 100%;
+    }
+
+    .footer-info{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: auto;
+        gap:5px;
+    }
+
+    .redes-sociais{
+        width: 60%;
+        justify-content: flex-start;
+    }
+    
+    .quarter{
+        width: 100%;
+        height: 150px;
+        gap: 10px;
+    }
+
+    #linkedin , #instagram , #facebook , #email , #whatsapp{
+        scale: 0.8;
+    }
+
+
 }
 
 /*Celulares*/
@@ -593,6 +809,57 @@ span.verde{
         width: 100%;
         padding: 25px;
     }
+
+    .container-contato-principal{
+        flex-direction: column;
+    }
+
+    .contato-esquerda{
+        width: 90%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .contato-direita{
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    .parceria{
+        scale: 1;
+        width: 100%;
+    }
+
+    .footer-info{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: auto;
+        gap:5px;
+    }
+
+    .redes-sociais{
+        width: 60%;
+        justify-content: flex-start;
+    }
+    
+    .quarter{
+        width: 100%;
+        height: 150px;
+        gap: 10px;
+    }
+
+    #linkedin , #instagram , #facebook , #email , #whatsapp{
+        scale: 0.6;
+    }
+
+    .redes-sociais i{
+        width: 20%;
+        justify-content:flex-start;
+        display: flex;
+    
+    }
+    
+
 }
 
 
@@ -656,6 +923,57 @@ span.verde{
         padding: 25px;
     }
 
+    .container-contato-principal{
+        flex-direction: column;
+    }
+
+    .contato-esquerda{
+        width: 90%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    .contato-direita{
+        width: 90%;
+        margin-top: 70px;
+    }
+
+    .parceria{
+        scale: 1;
+        width: 100%;
+    }
+
+    .footer-info{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: auto;
+        gap:5px;
+    }
+
+    .redes-sociais{
+        width: 95%;
+        justify-content:left;
+    }
+    
+    .quarter{
+        width: 100%;
+        height: 150px;
+        gap: 10px;
+    }
+
+    #linkedin , #instagram , #facebook , #email , #whatsapp{
+        scale: 0.5;
+    }
+
+    .redes-sociais i{
+        width: 18%;
+        justify-content:flex-start;
+        display: flex;
+    
+    }
+    
+   
+    
 }
 
   
